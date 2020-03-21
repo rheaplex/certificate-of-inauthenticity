@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.63636364"
-     inkscape:cx="408"
-     inkscape:cy="528"
+     inkscape:zoom="1.5168956"
+     inkscape:cx="412.5"
+     inkscape:cy="794.35714"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -73,7 +73,7 @@
        id="rect862"
        width="765"
        height="990"
-       x="-4.2632564e-14"
+       x="-75"
        y="62.362183" />
     <flowRoot
        xml:space="preserve"
@@ -148,7 +148,7 @@
              x="217.80753"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.5px;line-height:1.25;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
              xml:space="preserve"><tspan
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.4125005px;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375"
                y="884.24524"
                x="217.80753"
                id="tspan1058-8"
@@ -169,24 +169,29 @@
              id="tspan76-7"
              x="513.43304"
              y="898.22791"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375">Rhea Myers</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.4125005px;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375">Rhea Myers</tspan></text>
       </g>
     </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:60.00000238%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
-       x="147.83673"
-       y="284.35468"
+       x="146.5574"
+       y="276.88052"
        id="text1084-9"><tspan
          sodipodi:role="line"
-         x="147.83673"
-         y="284.35468"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:60.00000238%;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375"
-         id="tspan1092-1">This instance of the artwork &quot;AAAATITLEAAA&quot;</tspan><tspan
+         x="146.5574"
+         y="276.88052"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.41250038px;line-height:60.00000238%;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375"
+         id="tspan1092-1">Rare art certified instance ______ / ______</tspan><tspan
          sodipodi:role="line"
-         x="147.83673"
-         y="306.85468"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:60.00000238%;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375"
+         x="146.5574"
+         y="299.38052"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.41250038px;line-height:60.00000238%;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375"
+         id="tspan860">of the artwork _______________</tspan><tspan
+         sodipodi:role="line"
+         x="146.5574"
+         y="321.88052"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.41250038px;line-height:60.00000238%;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375"
          id="tspan1090-0">has not been modelled, produced, or presented by Rhea Myers.</tspan></text>
     <g
        id="g104-3"
@@ -208,7 +213,7 @@
              id="tspan82-8"
              x="137.23552"
              y="922.1983"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15px;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375">Date</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.4125005px;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT';stroke-width:0.9375">Date</tspan></text>
       </g>
       <text
          id="text88-4"
@@ -236,7 +241,7 @@
            y="328.56201"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.60000002;font-family:'Old Standard TT';-inkscape-font-specification:'Old Standard TT'" /></flowRegion><flowPara
          id="flowPara919-0"
-         style="font-size:16.44000053px;line-height:0.60000002">This is certificate XX of YY, it is valid only when:</flowPara><flowPara
+         style="font-size:16.44000053px;line-height:0.60000002">This certificate is valid only when:</flowPara><flowPara
          id="flowPara921-3"
          style="font-size:16.44000053px;line-height:0.60000002">a) It is displayed accompanying a single instance of the work named above that is being displayed in the same physical or virtual location as this certificate, and;</flowPara><flowPara
          style="font-size:16.44000053px;line-height:0.60000002"
@@ -256,5 +261,38 @@
          id="flowPara927-9"
          style="font-size:17.33333397px;line-height:0.60000002" /><flowPara
          id="flowPara929-1"
-         style="font-size:17.33333397px;line-height:0.60000002" /></flowRoot>  </g>
+         style="font-size:17.33333397px;line-height:0.60000002" /></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+       x="398.03574"
+       y="275.53088"
+       id="text864"><tspan
+         sodipodi:role="line"
+         id="tspan862"
+         x="398.03574"
+         y="275.53088"
+         style="font-size:15px;stroke-width:0.9375">@n</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+       x="339.19257"
+       y="275.53088"
+       id="text864-8"><tspan
+         sodipodi:role="line"
+         id="tspan862-9"
+         x="339.19257"
+         y="275.53088"
+         style="font-size:15px;stroke-width:0.9375">@i</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.5px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.9375"
+       x="258.35941"
+       y="299.21484"
+       id="text864-8-1"><tspan
+         sodipodi:role="line"
+         id="tspan862-9-0"
+         x="258.35941"
+         y="299.21484"
+         style="font-size:15px;stroke-width:0.9375">@title</tspan></text>
+  </g>
 </svg>

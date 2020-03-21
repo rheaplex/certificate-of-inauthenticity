@@ -26,8 +26,9 @@ do
         cp "$SOURCE" "$filepath"
         #inkscape "$SOURCE" --export-plain-svg="$filepath"
         # And fill it out
-        perl -i -p -e "s/AAAATITLEAAA/$work/" "$filepath"
-        perl -i -p -e "s/XX of YY/$i of $EDITION_EACH/" "$filepath"
+        perl -i -p -e "s/\@title/$work/" "$filepath"
+        perl -i -p -e "s/\@i/$i/" "$filepath"
+        perl -i -p -e "s/\@n/$EDITION_EACH/" "$filepath"
         perl -i -p -e "s/XXXX-XX-XX/$DATE/" "$filepath"
         # Then convert it to PDF
         inkscape "$filepath" --export-pdf="$pdffilepath"
