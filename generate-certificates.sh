@@ -5,7 +5,7 @@ EDITION_EACH=12
 BUILD_DIR="./build"
 
 # The date for the certificates
-DATE=$(date +%Y-%M-%d)
+DATE=$(date +%Y-%m-%d)
 echo $DATE
 
 # Ensure the build dir exists
