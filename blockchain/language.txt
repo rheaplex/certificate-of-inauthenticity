@@ -1,3 +1,12 @@
+
+with the URI of this image as the "image" field of its tokenURI() metadata
+
+--------------------------------------------------------------------------------
+
+The party or parties able to demonstrate equivalent or successor ownership of this image - for example the beneficiary of a token rental or of a cross-chain transfer but not the owner of a fractionalized wrapper token or a token referencing the URI of this image, or a copy of this image, created by an unauthorized third party.
+
+--------------------------------------------------------------------------------
+
 CERTIFICATE
 
  This instance of the artwork "AAAA"
