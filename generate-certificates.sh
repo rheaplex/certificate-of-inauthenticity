@@ -1,15 +1,17 @@
 #!/bin/bash
-SOURCE=template.svg
-WORKS=("Balloon Dog" "Pipe" "Urinal")
-EDITION_EACH=12
-BUILD_DIR="./build"
+
+source ./config.sh
+
+SOURCE="template.svg"
+IMAGES_DIR="${BUILD_DIR}/images"
 
 # The date for the certificates
 DATE=$(date +%Y-%m-%d)
 echo $DATE
 
-# Ensure the build dir exists
+# Ensure the build dirs exists
 mkdir -p "${BUILD_DIR}"
+mkdir -p "${IMAGES_DIR}"
 
 # For each work
 for work in "${WORKS[@]}"
@@ -18,9 +20,9 @@ do
     for ((i=1; i <= 12; i++))
     do
         nospaces=${work// /}
-        filepath="$BUILD_DIR/$nospaces$i.svg"
-        pdffilepath="$BUILD_DIR/$nospaces$i.pdf"
-        pngfilepath="$BUILD_DIR/$nospaces$i.png"
+        filepath="$IMAGES_DIR/$nospaces$i.svg"
+        pdffilepath="$IMAGES_DIR/$nospaces$i.pdf"
+        pngfilepath="$IMAGES_DIR/$nospaces$i.png"
         echo "$filepath"
         # Copy the template to the build dir
         cp "$SOURCE" "$filepath"
