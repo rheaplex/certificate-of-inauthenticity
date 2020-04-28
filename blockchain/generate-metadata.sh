@@ -17,7 +17,7 @@ do
     for ((i=1; i <= ${EDITION_EACH}; i++))
     do
         nospaces=${work// /}
-        filepath="$JSON_DIR/$nospaces$i.svg"
+        filepath="$JSON_DIR/$nospaces$i.json"
         pngfilename="$nospaces$i.png"
         # Copy the template to the build dir
         cp "$SOURCE" "$filepath"
