@@ -1,13 +1,13 @@
 #!/bin/bash
 
-if [ -f ipfs-image-dir-hash ]; then
+IMAGE_DIR_HASH_FILE="ipfs-certificate-dir-hash"
+IMAGE_SRC_DIR="./metadata/images/"
+
+if [ -f "${IMAGE_DIR_HASH_FILE}" ]; then
     echo "ipfs-image-dir-hash file already exists, not adding files to ipfs."
     exit 1
 fi
 
-# tee to stderr so we can see the result in case of error
+# Deploy the image files
 
-ipfs add -w metadata/images/*.png | \
-    tee /dev/fd/2 | \
-    awk '/added ([^ ]+)$/ {print $2}' | \
-    > ipfs-image-dir-hash
+ipfs add -Q -w "${IMAGE_SRC_DIR}/"*.png > "${IMAGE_DIR_HASH_FILE}"
