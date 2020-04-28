@@ -1,3 +1,5 @@
+const CertificateERC721 = artifacts.require("CertificateERC721");
+
 module.exports = function(deployer) {
-  // Use deployer to state migration tasks.
+  deployer.deploy(CertificateERC721);
 };
