@@ -10,4 +10,4 @@ fi
 
 # Deploy the image files
 
-ipfs add -Q -w "${METADATA_DIR}/"*.json > "${METADATA_DIR_HASH_FILE}"
+ipfs add -Q -w "${METADATA_DIR}/"* > "${METADATA_DIR_HASH_FILE}"

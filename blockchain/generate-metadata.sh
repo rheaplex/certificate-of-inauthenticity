@@ -19,7 +19,8 @@ do
     do
         nospaces=${work// /}
         # We don't format the json number as two digits, as the contract doesn't
-        filepath="$METADATA_DIR/$token_id.json"
+        # No JSON extension so it's easier for the URI function
+        filepath="$METADATA_DIR/$token_id"
         pngfilename="$nospaces$i.png"
         # Copy the template to the build dir
         cp "$SOURCE" "$filepath"
