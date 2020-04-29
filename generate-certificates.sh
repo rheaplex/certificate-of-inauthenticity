@@ -3,7 +3,6 @@
 source ./config.sh
 
 SOURCE="template.svg"
-IMAGES_DIR="${BUILD_DIR}/images"
 
 # The date for the certificates
 DATE=$(date +%Y-%m-%d)
@@ -11,18 +10,18 @@ echo $DATE
 
 # Ensure the build dirs exists
 mkdir -p "${BUILD_DIR}"
-mkdir -p "${IMAGES_DIR}"
+mkdir -p "${CERTIFICATES_DIR}"
 
 # For each work
 for work in "${WORKS[@]}"
 do
     # Make an edition
-    for ((i=1; i <= 12; i++))
+    for i in $(seq -f "%02g" 1 $EDITION_EACH)
     do
         nospaces=${work// /}
-        filepath="$IMAGES_DIR/$nospaces$i.svg"
-        pdffilepath="$IMAGES_DIR/$nospaces$i.pdf"
-        pngfilepath="$IMAGES_DIR/$nospaces$i.png"
+        filepath="$CERTIFICATES_DIR/$nospaces$i.svg"
+        pdffilepath="$CERTIFICATES_DIR/$nospaces$i.pdf"
+        pngfilepath="$CERTIFICATES_DIR/$nospaces$i.png"
         echo "$filepath"
         # Copy the template to the build dir
         cp "$SOURCE" "$filepath"

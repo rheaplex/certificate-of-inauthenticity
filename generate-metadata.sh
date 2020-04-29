@@ -3,21 +3,23 @@
 source ./config.sh
 
 SOURCE="template.json"
-IMAGES_DIR="${BUILD_DIR}/images"
-JSON_DIR="${BUILD_DIR}/json"
 
-IPFS_HASH=$(<ipfs-image-dir-hash)
+IPFS_HASH=$(<"${CERTIFICATES_DIR_HASH_FILE}")
 
-mkdir -p "${JSON_DIR}"
+mkdir -p "${METADATA_DIR}"
+
+token_id=1
 
 # For each work
 for work in "${WORKS[@]}"
 do
     # Make an edition
-    for ((i=1; i <= ${EDITION_EACH}; i++))
+    # We format the png number as two digits, zero prefixed if needed
+    for i in $(seq -f "%02g" 1 $EDITION_EACH)
     do
         nospaces=${work// /}
-        filepath="$JSON_DIR/$nospaces$i.json"
+        # We don't format the json number as two digits, as the contract doesn't
+        filepath="$METADATA_DIR/$token_id.json"
         pngfilename="$nospaces$i.png"
         # Copy the template to the build dir
         cp "$SOURCE" "$filepath"
@@ -27,5 +29,6 @@ do
         perl -i -p -e "s/\@editionsize/$EDITION_EACH/" "$filepath"
         perl -i -p -e "s/\@ipfshash/$IPFS_HASH/" "$filepath"
         perl -i -p -e "s/\@image/$pngfilename/" "$filepath"
+        token_id=$((token_id+1))
     done
 done
