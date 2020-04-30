@@ -5,7 +5,9 @@ const fs = require('fs');
 const CertificateERC721 = artifacts.require("CertificateERC721");
 
 
-const dirHash= fs.readFileSync('../ipfs-metadata-dir-hash').toString('utf-8');
+const dirHash= fs.readFileSync('../ipfs-metadata-dir-hash')
+      .toString('utf-8')
+      .trim();
 assert(dirHash != '');
 
 
