@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.5168956"
-     inkscape:cx="379.30523"
-     inkscape:cy="306.00535"
+     inkscape:zoom="0.63636364"
+     inkscape:cx="408"
+     inkscape:cy="528"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -73,8 +73,8 @@
        id="rect862"
        width="765"
        height="990"
-       x="-75"
-       y="64.237183" />
+       x="0"
+       y="62.362183" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot891"
