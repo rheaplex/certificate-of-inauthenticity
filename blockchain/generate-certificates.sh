@@ -34,6 +34,6 @@ do
         # Then convert it to PDF
         inkscape "$filepath" --export-pdf="$pdffilepath"
         # And convert it to PNG
-        inkscape "$filepath" --export-png="$pngfilepath"
+        inkscape "$filepath" --export-dpi=600 --export-png="$pngfilepath"
     done
 done

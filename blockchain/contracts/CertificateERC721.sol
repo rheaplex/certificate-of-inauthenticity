@@ -33,6 +33,7 @@ is ERC165, ERC721, ERC721Enumerable, IERC721Metadata
 
     /**
      * @dev Constructor function
+     *
      */
     constructor (
         string memory name,
@@ -87,7 +88,8 @@ is ERC165, ERC721, ERC721Enumerable, IERC721Metadata
      * @dev Internal function to set the base URI for all token IDs. It is
      * automatically added as a prefix to the value returned in {tokenURI}.
      *
-     * _Available since v2.5.0._
+     * We don't expose this as the base is intended to be immutable.
+     *
      */
     function _setBaseURI(string memory baseURI) internal {
         _baseURI = baseURI;
@@ -98,14 +100,16 @@ is ERC165, ERC721, ERC721Enumerable, IERC721Metadata
     * automatically added as a preffix in {tokenURI} to each token's URI, when
     * they are non-empty.
     *
-    * _Available since v2.5.0._
     */
     function baseURI() external view returns (string memory) {
         return _baseURI;
     }
 
-    // via https://github.com/oraclize/ethereum-api/blob/master/oraclizeAPI_0.5.sol
-
+    /**
+     * @dev Returns i formatted as a base 10 string.
+     * Via: https://github.com/oraclize/ethereum-api/blob/master/oraclizeAPI_0.5.sol
+     *
+     */
     function uint2str(uint i) internal pure returns (string memory) {
         if (i == 0) return "0";
         uint j = i;
