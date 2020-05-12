@@ -1,5 +1,5 @@
 {
     "name": "Certificate of Inauthenticity: @title (@index of @editionsize)",
-    "description": "A rare art certificate of authenticity for @title.",
+    "description": "A rare art certificate of inauthenticity for @title.",
     "image": "@ipfshash/@image"
 }
