@@ -1,4 +1,5 @@
 const fs = require('fs');
+const truffleAssert = require('truffle-assertions');
 
 
 const CertificateERC721 = artifacts.require("CertificateERC721");
@@ -44,5 +45,19 @@ contract("CertificateERC721", accounts => {
     assert.equal(await token.balanceOf(accounts[1]), 1);
   });
 
+  it("should allow owner to setBaseURI()", async () => {
+    await token.setBaseURI('aaaa');
+    assert.equal(await token.baseURI(), 'aaaa');
+  });
+
+  it("should not allow non-owner to setBaseURI()", async () => {
+    await truffleAssert.fails(
+      token.setBaseURI('aaaa', {from: accounts[1]}),
+      truffleAssert.ErrorType.REVERT,
+      'caller is not the owner'
+    );
+  });
+
+  
   // And if it does that it should be OK. :-)
 });

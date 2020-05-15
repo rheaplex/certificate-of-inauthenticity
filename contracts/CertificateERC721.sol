@@ -5,13 +5,14 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol";
 import "@openzeppelin/contracts/introspection/ERC165.sol";
+import "@openzeppelin/contracts/ownership/Ownable.sol";
 
 
 // We don't use the ERC721Metadata implementation as we don't need the storage
 // and functions it adds.
 
 contract CertificateERC721
-is ERC165, ERC721, ERC721Enumerable, IERC721Metadata
+is ERC165, ERC721, ERC721Enumerable, IERC721Metadata, Ownable
 () {
     // Token name
     string private _name;
@@ -42,7 +43,7 @@ is ERC165, ERC721, ERC721Enumerable, IERC721Metadata
     ) public {
         _name = name;
         _symbol = symbol;
-        _baseURI = baseURI;
+        setBaseURI(baseURI);
 
         // register the supported interfaces to conform to ERC721 via ERC165
         _registerInterface(_INTERFACE_ID_ERC721_METADATA);
@@ -85,15 +86,16 @@ is ERC165, ERC721, ERC721Enumerable, IERC721Metadata
     }
 
     /**
-     * @dev Internal function to set the base URI for all token IDs. It is
+     * @dev Function to set the base URI for all token IDs. It is
      * automatically added as a prefix to the value returned in {tokenURI}.
      *
-     * We don't expose this as the base is intended to be immutable.
+     * Ideally the base would be immutable but I need time to migrate to ipfs.
      *
      */
-    function _setBaseURI(string memory baseURI) internal {
+    function setBaseURI(string memory baseURI) public onlyOwner {
         _baseURI = baseURI;
     }
+
 
     /**
     * @dev Returns the base URI set via {_setBaseURI}. This will be

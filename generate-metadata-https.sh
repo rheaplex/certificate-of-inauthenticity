@@ -4,9 +4,11 @@ source ./config.sh
 
 SOURCE="template.json"
 
-IPFS_HASH=$(<"${CERTIFICATES_DIR_HASH_FILE}")
 
+METADATA_DIR="${BUILD_DIR}/https-metadata"
 mkdir -p "${METADATA_DIR}"
+HTTPS_IMG_ROOT="https:\/\/show.robmyers.org\/certificate-of-inauthenticity\/certificates"
+
 
 token_id=1
 
@@ -28,7 +30,7 @@ do
         perl -i -p -e "s/\@title/$work/" "$filepath"
         perl -i -p -e "s/\@index/$i/" "$filepath"
         perl -i -p -e "s/\@editionsize/$EDITION_EACH/" "$filepath"
-        perl -i -p -e "s/\@ipfshash/$IPFS_HASH/" "$filepath"
+        perl -i -p -e "s/\@imgroot/$HTTPS_IMG_ROOT/" "$filepath"
         perl -i -p -e "s/\@image/$pngfilename/" "$filepath"
         token_id=$((token_id+1))
     done
