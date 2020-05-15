@@ -10,7 +10,7 @@ echo $DATE
 
 # Ensure the build dirs exists
 mkdir -p "${BUILD_DIR}"
-mkdir -p "${CERTIFICATES_DIR}"
+mkdir -p "${IMAGE_DIR}"
 
 # For each work
 for work in "${WORKS[@]}"
@@ -19,9 +19,9 @@ do
     for i in $(seq -f "%02g" 1 $EDITION_EACH)
     do
         nospaces=${work// /}
-        filepath="$CERTIFICATES_DIR/$nospaces$i.svg"
-        pdffilepath="$CERTIFICATES_DIR/$nospaces$i.pdf"
-        pngfilepath="$CERTIFICATES_DIR/$nospaces$i.png"
+        filepath="$IMAGE_DIR/$nospaces$i.svg"
+        pdffilepath="$IMAGE_DIR/$nospaces$i.pdf"
+        pngfilepath="$IMAGE_DIR/$nospaces$i.png"
         echo "$filepath"
         # Copy the template to the build dir
         cp "$SOURCE" "$filepath"
