@@ -14,7 +14,8 @@ assert(dirHash != '');
 const TOKEN_NAME = "Certificate of Inauthenticity";
 const TOKEN_SYMBOL = "COIN";
 // Must have trailing slash
-const baseURI = `/ipfs/${dirHash}/`;
+//const baseURI = `/ipfs/${dirHash}/`;
+const baseURI = 'https://show.rhea.art/certificate-of-inauthenticity/metadata/';
 
 
 module.exports = function(deployer) {
