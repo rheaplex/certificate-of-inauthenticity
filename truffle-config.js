@@ -25,7 +25,7 @@ module.exports = {
       //port: 8545,
       network_id: "*",
       gas: 6700000,
-      gasPrice: 7000000000,  // 7 gwei (in wei) (default: 100 gwei)
+      gasPrice: 21000000000,  // 21 gwei(!) (in wei) (default: 100 gwei)
       // websockets: true,   // Enable EventEmitter interface for web3 (default: false)
       timeoutBlocks: 200,    // # of blocks before a deployment times out  (minimum/default: 50),
       confirmations: 1
@@ -41,16 +41,17 @@ module.exports = {
       // websockets: true        // Enable EventEmitter interface for web3 (default: false)
     // },
 
-    // Useful for deploying to a public network.
-    // NB: It's important to wrap the provider as a function.
-    // ropsten: {
-      // provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
-      // network_id: 3,       // Ropsten's id
-      // gas: 5500000,        // Ropsten has a lower block limit than mainnet
-      // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
-      // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+     rinkeby: {
+       provider: () => new HDWalletProvider(process.env.MNEMONIC,
+                                            `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+                                            process.env.ADDRESS_INDEX || 1),
+
+       network_id: 4,       // Rinkeby's id
+       confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+       gasPrice: 20000000000
       // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
-    // },
+     },
 
     // Useful for private networks
     // private: {
