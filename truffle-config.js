@@ -24,8 +24,8 @@ module.exports = {
       //host: "127.0.0.1",
       //port: 8545,
       network_id: "*",
-      gas: 6700000,
-      gasPrice: 21000000000,  // 21 gwei(!) (in wei) (default: 100 gwei)
+      gas: 8000000,
+      gasPrice: 12000000000,  // 12 gwei(!) (in wei) (default: 100 gwei)
       // websockets: true,   // Enable EventEmitter interface for web3 (default: false)
       timeoutBlocks: 200,    // # of blocks before a deployment times out  (minimum/default: 50),
       confirmations: 1
