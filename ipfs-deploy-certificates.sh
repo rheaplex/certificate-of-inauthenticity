@@ -9,4 +9,4 @@ fi
 
 # Deploy the image files
 
-ipfs add -Q -w "${IMAGE_DIR}/"*.png > "${METADATA_DIR_HASH_FILE}"
+ipfs add -Q -w "${IMAGE_DIR}/"*.png | tee "${IMAGE_DIR_HASH_FILE}"
