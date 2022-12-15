@@ -5,7 +5,7 @@ source ./config.sh
 SOURCE="template.svg"
 
 # The date for the certificates
-DATE=$(date +%Y-%m-%d)
+DATE='2020-05-11' #$(date +%Y-%m-%d)
 echo $DATE
 
 # Ensure the build dirs exists

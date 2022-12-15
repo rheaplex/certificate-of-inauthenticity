@@ -7,7 +7,7 @@ SOURCE="template.json"
 
 IPFS_HASH=$(<"${IMAGE_DIR_HASH_FILE}")
 
-IPFS_IMG_ROOT="\/ipfs\/${IPFS_HASH}"
+IPFS_IMG_ROOT="ipfs:\/\/${IPFS_HASH}"
 METADATA_DIR="${BUILD_DIR}/ipfs-metadata"
 
 
@@ -26,10 +26,10 @@ do
         nospaces=${work// /}
         # We don't format the json number as two digits, as the contract doesn't
         # No JSON extension so it's easier for the URI function
-        filepath="$METADATA_DIR/$token_id"
-        pngfilename="$nospaces$i.png"
+        filepath="$METADATA_DIR/${token_id}.json"
+        pngfilename="$nospaces${i}.png"
         # Copy the template to the build dir
-        cp "$SOURCE" "$filepath"
+        cp "$SOURCE" "${filepath}"
         # And fill it out
         perl -i -p -e "s/\@title/$work/" "$filepath"
         perl -i -p -e "s/\@index/$i/" "$filepath"

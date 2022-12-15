@@ -20,7 +20,7 @@ Use setBaseURI() on the CertificateERC721 contract
 
 For IPFS the URI is:
 
-    /ipfs/<content of ipfs-metadata-dir-hash>/ .
+    ipfs://<content of ipfs-metadata-dir-hash>/ .
 
 For HTTPS the URI is:
 
