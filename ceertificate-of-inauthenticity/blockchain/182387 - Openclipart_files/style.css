@@ -1,0 +1,308 @@
+/** @todo @rejon 2020-01-28 keep nuking this down */
+
+
+.story {
+	font-size: 24pt;
+	padding: 0 2em;
+}
+
+
+.story img {
+	margin: auto;
+	display: block;
+	width: 50%;
+}
+
+.story h2 {
+	text-align: center;
+	font-size: 24pt !important;
+	padding: 1em 0 2em 0;
+}
+
+#donate input {
+
+	border: none !important;
+	background: none !important;
+}
+
+
+#submitpage {
+	margin-bottom: 4em;
+}
+
+
+#footer #love a,
+#footer a:visited, #footer a:active, #footer a:link, #footer a {
+  text-decoration: none;
+
+}
+
+#love {
+  font-size: 36pt;
+}
+
+
+#love:hover {
+  opacity: 0.8;
+}
+
+.gallery {
+
+display: grid;
+grid-template-columns: auto auto auto auto;
+grid-row-gap: 2em;
+grid-column-gap: 2em;
+
+}
+
+.gallery .artwork {
+text-align: center;
+align-self: center;
+}
+
+.artwork img {
+	width: 100%;
+	
+}
+
+#paginator {
+	margin: 2em 0 0 0;
+	text-align: center;
+}
+
+
+#discussion {
+	clear: both;
+}
+/* NEW 2019-07 */
+
+#alert {
+  background-color: deeppink;
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+
+#alert a {
+  color: white;
+}
+
+#alert a:hover {
+  filter: invert(100%);
+  text-decoration: none;
+}
+
+#auto-typography-title { 
+  text-transform: ucfirst;
+}
+
+
+.ucfirst {
+  text-transform:capitalize;
+}
+
+#logo {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 11px;
+    color: #FFF;
+    font-size: 30pt;
+    font-weight: bold;
+    line-height: 0;
+}
+#logo a:link, #logo a:visited { color: #FFF; }
+
+#logged {
+    color: #FFF;
+    font-size: 9pt;
+    text-align: right;
+    padding: 14px 20px 20px 10px;
+}
+#logged b { color: #FFF; margin:0 5px 0 5px;}
+#logged a:link, #logged a:visited { color: #FFF; margin:0 5px 3px 5px; font-size:12pt; line-height: 12pt;}
+#logged a:hover, #logged a:active { text-decoration: underline; }
+
+#upload-menu {
+    color: #FFF;
+    font-size: 9pt;
+    text-align: right;
+    padding: 14px 20px 20px 10px;
+}
+
+#upload-menu a:link, #upload-menu a:visited { color: #FFF; margin:0 5px 0 5px;}
+#upload-menu a:hover, #upload-menu a:active { text-decoration: none; }
+
+
+#logged a#uploadshare {
+	line-height: 10pt;
+}
+#logged a#uploadshare:hover {
+   text-decoration: none;
+   border-bottom: none;
+}
+
+
+#content {
+   padding: 18px 20px;
+}
+
+#content h2 img { position: relative; top: 3px; }
+
+#content h4 {
+    line-height: 14pt;
+}
+
+
+.wrapper table {
+    width: 100%;
+}
+table td.metric {
+    width: 50%;
+    font-weight: bold;
+}
+
+table td.number {
+    width: 50%;
+    text-align: right;
+}
+
+table td.heading
+{
+    width: 33%;
+    font-weight: normal;
+    color: #444;
+}
+
+.wrapper table td {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+/*https://openclipart.org/may-clipart-be-used-comparison CSS for the widget use-comparison (id 2145) */
+table#comparison {
+   border: 1px solid gray;
+   border-collapse:collapse;
+}
+
+table#comparison th {
+    text-align: left;
+   background-color: #eee;
+}
+
+
+table#comparison td {
+   padding: 4px;
+   background-color: #eee;
+   height: 36px;
+}
+
+table#comparison td,
+table#comparison tr {
+   border: 1px solid gray;
+}
+
+table#comparison td.commercial {
+   background-color: #74d216;
+}
+
+table#comparison td.non-commercial {
+   background-color: #729fcf;
+}
+
+table#comparison td.commercial,
+table#comparison td.non-commercial {
+   width: 15%;
+}
+
+#developers table {
+    border: 1px solid black;
+    margin: 8px 0;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#developers table td.api-name,
+#developers table td.api-url {
+    width: 50%;
+}
+
+#developers tr,
+#developers td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+
+
+
+
+#footer {
+  background-color: green;
+  text-align: center;
+  color: white;
+}
+
+#footer a:visited,
+#footer a:active,
+#footer a:link,
+#footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+#footer #love {
+	padding-top: 1rem;
+}
+#footer #links {
+	padding-bottom: 1rem;
+}
+
+#footer #links a {
+	padding: 0.2rem;
+}
+
+
+#header {
+    background-color: green;
+    overflow: auto;
+    padding: 0px 10px;
+}
+#header #logo { width: 42px; float: left;}
+#header #logo a { display: block; overflow: auto; }
+
+#header #logged { padding: 0px; line-height: 44px; position: relative; float: right; }
+
+#mainnav li.launchpad { width: 100%; border-top: 1px solid #cccccc; }
+
+#main-menu { 
+	overflow: auto; 
+	padding: 0; 
+  background-color: #e2e2e2;
+}
+#main-menu li a:link, 
+#main-menu li a:visited {
+    border-right: 1px solid #CCCCCC;
+    color: #2E3436;
+    display: block;
+    font-size: 14pt;
+    padding: 0 0.62em;
+    text-decoration: none;
+    line-height: 46px;
+    text-align: center;
+}
+
+
+#search .mb-3 {
+	margin-top: 1rem!important;
+	margin-bottom: 1rem!important;
+}
+
+
+#browse { 
+	margin-top: 2rem;
+}
